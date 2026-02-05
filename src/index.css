@@ -110,4 +110,7 @@ ul, ol {
   list-style: none;
 }
 
-/*
+/* Ensure consistent sizing */
+body, #root {
+  width: 100%;
+}
