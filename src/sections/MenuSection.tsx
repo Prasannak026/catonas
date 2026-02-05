@@ -58,7 +58,7 @@ export const MenuSection: React.FC = () => {
           {categories.map(category => (
             <button
               key={category}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => setSelectedCategory(selectedCategory === category ? null : category)}
               className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                 selectedCategory === category
                   ? 'bg-coral text-white shadow-lg'
